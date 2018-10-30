@@ -1,15 +1,28 @@
+#ifndef SCREEN_H
+#define SCREEN_H
+
+#include <iostream>
+#include <vector>
+#include <ostream>
+
 using namespace std;
+
 class Screen {
 private:
-    int nl, nc;
+
+    int nlin, ncol;
     char brush = '*';
     vector< vector<char> > matriz;
+
 public:
-    Screen(int _nl = 10, int _nc = 10);
+
+    Screen(int _nlin = 10, int _ncol = 10);
     void setPixel(int x, int y);
     void clear();
     void setBrush(char _brush = '*');
     friend ostream& operator<<(ostream &os, Screen &t);
+    void setScreen(int nl,int nc);
+    
 };
 
 #endif // SCREEN_H
