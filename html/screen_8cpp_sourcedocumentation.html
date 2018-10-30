@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projeto 2 - Tratamento de Classes Abstratas: Código-Fonte de screen.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projeto 2 - Tratamento de Classes Abstratas
+   </div>
+   <div id="projectbrief">Documentação do projeto da disciplina Programação Avançada (DCA1202)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">screen.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;screen.h&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestddocumentation.html">std</a>;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_screendocumentation.html#a95aff497d133f685fbbb959d78dc0899">    6</a></span>&#160;<a class="code" href="class_screendocumentation.html#a95aff497d133f685fbbb959d78dc0899">Screen::Screen</a>(<span class="keywordtype">int</span> _nlin, <span class="keywordtype">int</span> _ncol)</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    nlin = _nlin;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    ncol = _ncol;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    matriz = vector&lt;vector&lt;char&gt;&gt;(nlin, vector&lt;char&gt;(ncol,<span class="charliteral">&#39; &#39;</span>));</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_screendocumentation.html#ae6bea81c57a22d226507c3c26fa95ee0">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_screendocumentation.html#ae6bea81c57a22d226507c3c26fa95ee0">Screen::setPixel</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y)</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">if</span>((x &gt;=0 &amp;&amp; x &lt; nlin) &amp;&amp; (y &gt;= 0 &amp;&amp; y &lt; ncol)){</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        matriz[x][y] = brush;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_screendocumentation.html#a35e74266b2a04e37b354ceff7a5f1031">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_screendocumentation.html#a35e74266b2a04e37b354ceff7a5f1031">Screen::clear</a>()</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;matriz.size();i++){</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0;j&lt;matriz[i].size();j++){</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            matriz[i][j] = <span class="charliteral">&#39; &#39;</span>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_screendocumentation.html#a59f2c3f9e889b425940749e8f646db72">   29</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_screendocumentation.html#a59f2c3f9e889b425940749e8f646db72">Screen::setScreen</a>(<span class="keywordtype">int</span> nl, <span class="keywordtype">int</span> nc)</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    nlin = nl;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    ncol = nc;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    matriz = vector&lt;vector&lt;char&gt;&gt;(nlin, vector&lt;char&gt;(ncol,<span class="charliteral">&#39; &#39;</span>));</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_screendocumentation.html#a81a139ded3a626b9916d82209eb6673a">   36</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_screendocumentation.html#a81a139ded3a626b9916d82209eb6673a">Screen::setBrush</a>(<span class="keywordtype">char</span> _brush)</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    brush = _brush;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;ostream&amp; operator&lt;&lt;(ostream &amp;os, <a class="code" href="class_screendocumentation.html">Screen</a> &amp;t)</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;t.nlin; i++){</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;t.ncol; j++){</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            os &lt;&lt; t.matriz[i][j];</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        os &lt;&lt; endl;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> os;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div><div class="ttc" id="class_screendocumentation_html_a81a139ded3a626b9916d82209eb6673a"><div class="ttname"><a href="class_screendocumentation.html#a81a139ded3a626b9916d82209eb6673a">Screen::setBrush</a></div><div class="ttdeci">void setBrush(char _brush=' *')</div><div class="ttdoc">Define o brush que irá formar as figuras. </div><div class="ttdef"><b>Definition:</b> <a href="screen_8cpp_sourcedocumentation.html#l00036">screen.cpp:36</a></div></div>
+<div class="ttc" id="namespacestddocumentation_html"><div class="ttname"><a href="namespacestddocumentation.html">std</a></div></div>
+<div class="ttc" id="class_screendocumentation_html"><div class="ttname"><a href="class_screendocumentation.html">Screen</a></div><div class="ttdoc">A classe Screen implementa uma tela virtual de suporte, representada por uma matriz, onde são reproduzidos os desenhos. </div><div class="ttdef"><b>Definition:</b> <a href="screen_8h_sourcedocumentation.html#l00011">screen.h:11</a></div></div>
+<div class="ttc" id="class_screendocumentation_html_a59f2c3f9e889b425940749e8f646db72"><div class="ttname"><a href="class_screendocumentation.html#a59f2c3f9e889b425940749e8f646db72">Screen::setScreen</a></div><div class="ttdeci">void setScreen(int nl, int nc)</div><div class="ttdoc">setScreen define uma tela para o sistema. </div><div class="ttdef"><b>Definition:</b> <a href="screen_8cpp_sourcedocumentation.html#l00029">screen.cpp:29</a></div></div>
+<div class="ttc" id="class_screendocumentation_html_a95aff497d133f685fbbb959d78dc0899"><div class="ttname"><a href="class_screendocumentation.html#a95aff497d133f685fbbb959d78dc0899">Screen::Screen</a></div><div class="ttdeci">Screen(int _nlin=10, int _ncol=10)</div><div class="ttdoc">Screen é o construtor da classe. </div><div class="ttdef"><b>Definition:</b> <a href="screen_8cpp_sourcedocumentation.html#l00006">screen.cpp:6</a></div></div>
+<div class="ttc" id="class_screendocumentation_html_a35e74266b2a04e37b354ceff7a5f1031"><div class="ttname"><a href="class_screendocumentation.html#a35e74266b2a04e37b354ceff7a5f1031">Screen::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Apaga todos os caracteres da tela. </div><div class="ttdef"><b>Definition:</b> <a href="screen_8cpp_sourcedocumentation.html#l00020">screen.cpp:20</a></div></div>
+<div class="ttc" id="class_screendocumentation_html_ae6bea81c57a22d226507c3c26fa95ee0"><div class="ttname"><a href="class_screendocumentation.html#ae6bea81c57a22d226507c3c26fa95ee0">Screen::setPixel</a></div><div class="ttdeci">void setPixel(int x, int y)</div><div class="ttdoc">Define um pixel na tela com o caractere guardado em brush. </div><div class="ttdef"><b>Definition:</b> <a href="screen_8cpp_sourcedocumentation.html#l00013">screen.cpp:13</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

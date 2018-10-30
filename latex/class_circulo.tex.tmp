@@ -1,0 +1,25 @@
+\hypertarget{class_circulo}{}\section{Circulo Class Reference}
+\label{class_circulo}\index{Circulo@{Circulo}}
+
+
+Inheritance diagram for Circulo\+:
+% FIG 0
+
+
+Collaboration diagram for Circulo\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_circulo_a81e805a46ea2e928990810b18d9074ff}\label{class_circulo_a81e805a46ea2e928990810b18d9074ff}} 
+{\bfseries Circulo} (int \+\_\+x0, int \+\_\+y0, int \+\_\+raio, bool \+\_\+fillmode, char \+\_\+brush=\textquotesingle{} $\ast$\textquotesingle{})
+\item 
+\mbox{\Hypertarget{class_circulo_a593787d6e0618c2eded23e8839e7bea6}\label{class_circulo_a593787d6e0618c2eded23e8839e7bea6}} 
+void {\bfseries draw} (\hyperlink{class_screen}{Screen} \&t)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+circulo.\+h\item 
+circulo.\+cpp\end{DoxyCompactItemize}

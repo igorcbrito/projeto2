@@ -16,8 +16,8 @@ int main() {
     ofstream fout;
     Screen t;
     string s;
-    fin.open("/home/malu/Área de Trabalho/Tratamento_Classes_Abstratas/instrucoes.txt");
-    fout.open("/home/malu/Área de Trabalho/Tratamento_Classes_Abstratas/figura.txt");
+    fin.open("/home/igor/projeto2/instrucoes.txt");
+    fout.open("/home/igor/projeto2/figura.txt");
     list <FiguraGeometrica*>::iterator li;
     list <FiguraGeometrica*> figuras;
     while(fin.good()){
